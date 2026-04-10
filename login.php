@@ -17,9 +17,9 @@
 if(isset($_POST['login'])){
 
 $user=$_POST['username'];
-$pass=md5($_POST['password']);
+$pass=$_POST['password'];
 
-$sql="SELECT * FROM users WHERE username='$user' AND password='$pass'";
+$sql="SELECT * FROM tb_accounts WHERE username='$user' AND password='$pass'";
 
 $result=mysqli_query($conn,$sql);
 
