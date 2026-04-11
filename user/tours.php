@@ -26,6 +26,8 @@
 
 <h2>Danh sách tour</h2>
 
+<div class="list-tour">
+
 <?php
 
 $sql="SELECT * FROM tb_tours";
@@ -35,9 +37,6 @@ $result=mysqli_query($conn,$sql);
 while($row=mysqli_fetch_assoc($result)){
 
 ?>
-
-<div class="list-tour">
-
 
     <div class="tour">
 
@@ -51,7 +50,7 @@ while($row=mysqli_fetch_assoc($result)){
 
     <p>Ngày: <?php echo $row['duration']; ?></p>
 
-    <a href="book.php?id=<?php echo $row['id']; ?>">Đặt tour</a>
+    <a href="booking.php?id=<?php echo $row['id']; ?>">Đặt tour</a>
 
     </div>
 

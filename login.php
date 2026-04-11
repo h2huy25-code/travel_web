@@ -1,17 +1,5 @@
 <?php include "config.php"; ?>
 
-<form method="post">
-<h2>Login</h2>
-
-<input type="text" name="username" required>
-<br><br>
-
-<input type="password" name="password" required>
-<br><br>
-
-<button name="login">Login</button>
-</form>
-
 <?php
 
 if(isset($_POST['login'])){
@@ -38,3 +26,31 @@ echo "Sai tài khoản";
 
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập - Travel</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <form method="post" class="login-form">
+        <h2>🌍 Đăng nhập</h2>
+
+        <input type="text" name="username" placeholder="Tên đăng nhập" required>
+
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+
+        <button name="login">Đăng nhập</button>
+
+        <p class="signup-link">Chưa có tài khoản? <a href="signup.php"> Đăng ký</a></p>
+    </form>
+
+</div>
+
+</body>
+</html>
