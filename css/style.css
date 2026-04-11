@@ -23,10 +23,28 @@ body{
     margin-top:20px;
 }
 
-.tour{
-    border:1px solid #ddd;
-    padding:10px;
-    margin-bottom:15px;
+.tour {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.tour img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tour h3 {
+    margin: 10px 0;
+}
+
+.tour a:hover {
+    background: darkblue;
 }
 
 img{
